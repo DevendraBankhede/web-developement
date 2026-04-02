@@ -1,0 +1,37 @@
+/* #OuterDiv {
+    border: 1px solid #000;
+    width: 600px;
+    height: 200px;
+    background-color: blue;
+}
+.inlineDiv {
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: red;
+    margin: 47px;
+} */
+ #outerDiv
+ {
+    margin: auto;
+    height: 600px;
+    width: 630px;
+    border: 1px solid blue;
+    background-color: oldlace;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+ }
+ .innerDiv
+ {
+    height: 100px;
+            width: 100px;
+            border: 1px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+ }
