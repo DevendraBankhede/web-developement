@@ -1,11 +1,11 @@
-/* reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body */
+
 body {
     height: 100vh;
     background: #116ecb;
@@ -13,18 +13,15 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    /* font-family: Arial, sans-serif; */
 }
 
-/* dono forms side by side */
 #outerdiv {
     background: #fff;
     padding: 20px;
-    width: 300px;
     border-radius: 10px;
 }
 
-/* heading */
+
 h2 {
     margin-bottom: 20px;
     font-size: 20px;
@@ -32,26 +29,25 @@ h2 {
     padding-bottom: 5px;
 }
 
-/* underline color */
+
 u {
     text-decoration-color: blue;
 }
-
-/* input container */
 .innerdiv {
     position: relative;
     margin-bottom: 20px;
 }
 
-/* left icons */
+
 .innerdiv svg:first-child {
     position: absolute;
     top: 10px;
     left: 10px;
     color: gray;
+    
 }
 
-/* right eye icon */
+
 .innerdiv svg:last-child {
     position: absolute;
     top: 10px;
@@ -60,7 +56,7 @@ u {
     cursor: pointer;
 }
 
-/* inputs */
+
 .innerdiv input {
     width: 100%;
     padding: 10px 35px;
@@ -70,12 +66,12 @@ u {
     outline: none;
 }
 
-/* focus effect */
+
 .innerdiv input:focus {
     border-bottom: 1px solid #116ecb;
 }
 
-/* options */
+
 .options {
     display: flex;
     justify-content: space-between;
@@ -83,13 +79,12 @@ u {
     margin-bottom: 15px;
 }
 
-/* links */
+
 .options a {
     color: #116ecb;
     text-decoration: none;
 }
 
-/* button */
 button {
     width: 100%;
     padding: 10px;
@@ -101,14 +96,14 @@ button {
     cursor: pointer;
 }
 
-/* hover */
+
 button:hover {
     background: #0d5aa5;
 }
 
-/* bottom text */
+
 p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 13px;
     text-align: center;
 }
@@ -116,4 +111,18 @@ p {
 p a {
     color: #116ecb;
     text-decoration: none;
+} 
+button:hover
+{
+    background-color: green;
+    color: blue;
+}
+input :focus 
+{
+    outline:none;
+}
+
+input 
+{
+    accent-color: green;
 }

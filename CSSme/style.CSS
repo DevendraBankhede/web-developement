@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #0f5bd3, #1e88e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+#outerDiv1, .outerDiv2 {
+    background: #fff;
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.innerDiv1,
+.innerDiv2,
+.innerDiv1\.1,
+.innerDiv1\.2,
+.innerDiv1\.3,
+.innerDiv1\.4 {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+
+.innerDiv1 svg,
+.innerDiv2 svg,
+.innerDiv1\.1 svg,
+.innerDiv1\.2 svg,
+.innerDiv1\.3 svg,
+.innerDiv1\.4 svg {
+    margin-right: 10px;
+    color: gray;
+}
+
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+}
+
+.options {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+
+a {
+    color: #1e88e5;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+p, .options {
+    margin-top: 5px;
+}
+button:hover
+{
+    background-color: green;
+    color: blue;
+}
+input :focus 
+{
+    outline:none;
+}
+
+input 
+{
+    accent-color: green;
+}
+button:disabled
+{
+    background-color: rgb(red, green, blue);
+    color: #fff;
+    cursor: not-allowed;
+}

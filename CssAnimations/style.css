@@ -1,0 +1,29 @@
+#div1 {
+  width: 50px;
+  border: 1px solid #000;
+  height: 20px;
+  overflow: hidden;
+  text-wrap-mode: nowrap;
+  color: aqua;
+  transition:
+    width 5s linear,
+    color 2s linear 3s;
+}
+
+#div1:hover {
+  width: 380px;
+  color: blue;
+}
+
+#div2 {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #000;
+  margin: auto;
+  color: red;
+  transition: transform 1s linear;
+}
+
+#div2:hover {
+  transform: rotateX(180deg) translateY(50px) scaleX(1.1);
+}

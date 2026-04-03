@@ -1,0 +1,44 @@
+.box
+{
+   width: 200px; 
+   height: 200px;
+   background-color: blue;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.card
+{
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+}
+
+input
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+button:hover
+{
+    background-color: black;
+    color: white;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
