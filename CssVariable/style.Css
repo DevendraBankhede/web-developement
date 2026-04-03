@@ -1,0 +1,39 @@
+:root
+{
+    --main-color:red;
+    --sub-color:blue;
+    --text-color:green;
+}
+
+
+button
+{
+    padding: 10px;
+    border-radius: 5px;
+}
+ #login
+{
+      background-color: green;
+}
+ #register
+{
+    background-color: rgb(72, 72, 228);
+}
+h1{
+    color:var(--main-color) ;
+}
+h3{
+     --sub-color:blue;
+}
+
+p{
+    color: var(--text-color) ;
+}
+
+th{
+    color: var(--text-color) ;
+}
+td
+{
+    color: blue;
+}

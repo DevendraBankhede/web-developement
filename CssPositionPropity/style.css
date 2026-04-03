@@ -58,7 +58,7 @@
 }
 
 .login-btn {
-  padding: 15px;
+  padding: 10px;
   font-weight: bolder;
   font-size: larger;
   background-color: rgb(11, 91, 156);
@@ -85,7 +85,7 @@ p {
 
     background-color:#e3f7fd;
     max-width: 1000px;
-    height: 1000px;
+    height: 950px;
     margin: 0 auto;
     padding: 40px;
     border-radius: 12px;
@@ -137,7 +137,7 @@ input, select {
     padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #F9FBFF; /* Very light tint */
+    background-color: #F9FBFF; 
     font-size: 16px;
 }
 
@@ -171,7 +171,7 @@ input, select {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: normal; /* Checkbox text shouldn't be bold */
+    font-weight: normal; 
     cursor: pointer;
 }
 
@@ -204,65 +204,111 @@ input, select {
     background-color: #1b263b;
     transform: scale(1.05);
 }
-
-.site-footer {
-    background-color: #0b4d7a; /* Deep blue from image */
-    color: white;
-    padding: 60px 20px 20px 20px;
-
+footer {
+  background-color: #1e5b7d;
+  color: #fff;
+  padding: 70px 90px 25px;
+  font-family: Arial, sans-serif;
 }
 
-.footer-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
 }
 
-.footer-column {
-    flex: 1;
+
+.footer-col {
+  flex: 1;
 }
 
-.footer-column h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 10px;
+
+.footer-col h2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.footer-column p {
-    text-align: left; 
-    color: #cbd5e0;
-    line-height: 1.6;
-    margin-bottom: 15px;
+
+.footer-col h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-.footer-column ul {
-    list-style: none;
+
+.footer-col p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #cfe3ef;
+  max-width: 280px;
 }
 
-.footer-column ul li {
-    color: #cbd5e0;
-    margin-bottom: 10px;
-    cursor: pointer;
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Social Icons */
-.social-links {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #cfe3ef;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.icon {
-    background: white;
-    color: #0b4d7a;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-weight: bold;
+.footer-col ul li:hover {
+  color: #ffffff;
+}
+
+
+.policy {
+  margin-top: 25px;
+}
+
+
+.footer-col p {
+  margin-bottom: 12px;
+}
+
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  align-items: ;
+}
+
+.social-icons span {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  background: #ffffff;
+  color: #1e5b7d;
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  
+  
+}
+
+.social-icons span:hover {
+  background: #d9ecf7;
+}
+
+
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #cfe3ef;
 }
