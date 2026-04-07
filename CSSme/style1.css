@@ -1,0 +1,48 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   background-color: white;
+   flex-wrap: wrap;
+}
+.navbar1
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px;
+   background-color: white;
+   gap: 80px;
+   margin-left: 35%;
+   font-weight: bold;
+}
+.navbar2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Phone-no
+{
+    background-color: white;
+    color: black;
+}
+.login-btn 
+{
+  padding: 10px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  box-shadow: red;
+  cursor: pointer;
+  box-shadow: 0 6px 0 skyblue;
+}
