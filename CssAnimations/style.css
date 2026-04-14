@@ -4,6 +4,7 @@
   height: 20px;
   overflow: hidden;
   text-wrap-mode: nowrap;
+  background: radial-gradient(circle,rgba(238, 174, 202, 1) 45%, rgba(148, 187, 233, 1) 94%);
   color: aqua;
   transition:
     width 5s linear,
@@ -20,7 +21,8 @@
   height: 300px;
   border: 1px solid #000;
   margin: auto;
-  color: red;
+  color: black;
+  background: radial-gradient(circle,rgba(63, 94, 251, 0.94) 20%, rgba(252, 70, 107, 1) 79%);
   transition: transform 1s linear;
 }
 

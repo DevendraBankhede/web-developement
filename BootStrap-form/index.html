@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
@@ -55,115 +58,192 @@
         </p>
 
         <form class="bg-info">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <label class="form-label">Parson Name*</label>
-                    <input type="text" class="form-control" placeholder="Parson Name">
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Contact Number*</label>
-                    <input type="text" class="form-control" placeholder="Contact Number">
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Email*</label>
-                    <input type="text" class="form-control" placeholder="Email">
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Qualification*</label>
-                    <input type="text" class="form-control" placeholder="Qualification">
-                </div>
-                <div class="col-md-12">
-                    <label class="form-label">Collage/School Name*</label>
-                    <input type="text" class="form-control" placeholder="Collage/School Name">
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Year*</label>
-                    <select class="form-select">
-                        <option>Year</option>
-                        <option>First year</option>
-                         <option>Second year</option>
-                          <option>third year</option>
-                           <option>Final year</option>
-                    </select>
-                </div>
-
-                <div class="col-md-6">
-                    <label class="form-label">Branch*</label>
-                    <input type="text" class="form-control" placeholder="Branch">
-                </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Parson Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Parson Name"
+              />
             </div>
 
-            <div class="row mt-4">
-
-  <!-- LEFT SIDE (COURSE) -->
-                <div class="col-md-6">
-                    <label class="form-label">Interested in Which Course*</label>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Full Stack</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Data Science</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Data Analytics</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Business</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Java</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Python</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">C/C++</label>
-                    </div>
-
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">Other</label>
-                    </div>
-                </div>
-
-  <!-- RIGHT SIDE -->
-                <div class="col-md-6">
-                    <label class="form-label">Source of Information</label>
-                    <select class="form-select mb-3">
-                    <option>Select</option>
-                    </select>
-
-                    <label class="form-label">Name of Executive*</label>
-                    <select class="form-select">
-                    <option>Select</option>
-                    </select>
-                </div>
+            <div class="col-md-6">
+              <label class="form-label">Contact Number*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Contact Number"
+              />
             </div>
 
-            <div class="text-center mt-4">
-                <button class="btn btn-dark px-5 py-2 rounded-pill"> Submit</button>
+            <div class="col-md-6">
+              <label class="form-label">Email*</label>
+              <input type="text" class="form-control" placeholder="Email" />
             </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Qualification*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Qualification"
+              />
+            </div>
+            <div class="col-md-12">
+              <label class="form-label">Collage/School Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Collage/School Name"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Year*</label>
+              <select class="form-select">
+                <option>Year</option>
+                <option>First year</option>
+                <option>Second year</option>
+                <option>third year</option>
+                <option>Final year</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Branch*</label>
+              <input type="text" class="form-control" placeholder="Branch" />
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <!-- LEFT SIDE (COURSE) -->
+            <div class="col-md-6">
+              <label class="form-label">Interested in Which Course*</label>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Full Stack</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Data Science</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Data Analytics</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Business</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Java</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Python</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">C/C++</label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Other</label>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-md-6">
+              <label class="form-label">Source of Information</label>
+              <select class="form-select mb-3">
+                <option>Select</option>
+              </select>
+
+              <label class="form-label">Name of Executive*</label>
+              <select class="form-select">
+                <option>Select</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <button class="btn btn-dark px-5 py-2 rounded-pill">Submit</button>
+          </div>
         </form>
       </div>
     </div>
+    
+    <footer class="bg-primary text-light pt-5 pb-3">
+        <div class="container">
+          <div class="row">
+
+      <!-- Left Side (Logo + Paragraph) -->
+      <div class="col-md-3 mb-4">
+          <img src="ricu.png" class="Logo" />
+          <p class="instraction mt-3">
+            RICR is a subsidiary of Raj Digital Private Limited.<br />
+            It is a premier coding and robotics institute,<br>
+            empowering students with cutting-edge education.
+          </p>
+      </div>
+
+      <!-- Right Side (Quick Links) -->
+      <div class="col-md-3 mb-4">
+        <h3>Quick Link</h3>
+        <ul class="list-unstyled">
+          <li>Courses</li>
+          <li>Host a Workshop</li>
+          <li>Community Ambassador</li>
+          <li>Work With Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h3>Other Links</h3>
+        <ul class="list-unstyled">
+          <li>Education Facility</li>
+        </ul>
+        <h3>Policy</h3>
+        <ul class="link-underline">
+          <li>terms of Services</li>
+          <li>Privacy policy</li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h3>Information</h3>
+        <p>Minal Mall, Bhopal (462023)</p>
+        <p>Contact@ricr.in</p>
+        <p>+91 8889991736</p>
+
+        <div class="d-flex gap-3 fs-4">
+          <span><i class="bi bi-facebook"></i></span>
+          <span><i class="bi bi-instagram"></i></span>
+          <span><i class="bi bi-youtube"></i></span>
+          <span><i class="bi bi-linkedin"></i></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="d-flex justify-content-between border-top pt-3 mt-3">
+      <p class="mb-0">@ Rj Digital Private Limited | All Right Reserved</p>
+      <span>Sitemap</span>
+    </div>
+  </div>
+</footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
