@@ -1,23 +1,335 @@
-*
-{
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+:root {
+  --color-primary: #c2410c;
+  /* Brand orange-red */
+  --color-primary-content: #ffffff;
+  /* Text on primary background */
+  --color-secondary: #6b7280;
+  /* Muted gray text */
+  --color-neutral: #3f3f46;
+  /* Dark sections (footer, bars) */
+  --color-neutral-content: #f4f4f5;
+  /* Text on dark backgrounds */
+  --color-base-100: #fff8f1;
+  /* Warm white page background */
+  --color-base-200: #f5ede5;
+  /* Slightly darker warm white */
+  --color-base-300: #e7d9c9;
+  /* Borders and dividers */
+  --color-base-content: #2d1b10;
+  /* Default dark text */
+  --color-error: #ef4444;
+  /* Red for error states */
+  --color-success: #22c55e;
+  /* Green for success states */
+}
+.navbar-brand img, .navbar a img {
+    cursor: pointer;
+}
+
 .hero {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  /* z-index: 2; */
   padding-bottom: 100px;
 }
-
-.carousel-inner img {
-  height: 100vh;
-  object-fit: cover;
+header.mark .navbar {
+    background: linear-gradient( var(--color-primary));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s ease;
 }
-.search-box
-{
 
+header.mark .bg-white {
+    color: #c44d16;
+    text-decoration: none;
+    align-self: center;
+}
+.navbar .btn.bg-white:hover {
+    background-color: transparent !important; 
+    color: white !important;          
+    border-color: white;          
+}
+
+.hero .btn.text-white{
+    background-color: #c44d16 ;
+    padding: 10px 30px;
+}
+
+.navbar .btn.link-light:hover {
+    border-color: white !important; 
+    color: white !important;    
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+.hero .btn-light.text-dark{
+    font-weight:  bold;
+  padding: 10px 30px;
+}
+.carousel-inner {
+  height: 80vh;
+
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  /* Halka black touch */
+}
+
+.full-screen-bg {
+  background-color: #f8f9fa;
+  
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card ko white hi rakhna taaki wo background par uth kar dikhe */
+.card {
+  background-color: #ffffff !important;
+  border-radius: 12px;
+}
+
+
+.features-restorant {
+  background: linear-gradient(180deg, var(--color-primary), var(--color-neutral-content));
+  color:white;
+  /* Light cream/orange tint */
+  padding: 40px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.features-restorant .btn-danger {
+    background-color: #c44d16 !important;
+    color: white;
+}
+.features-restorant .btn-danger:hover {
+    background-color: #218838 !important;
+   
+}
+.restaurentCardImage
+{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+.btn-custom {
+    background-color: #c44d16 !important; /* Blue color (Aap ise change kar sakte hain) */
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+.btn-custom:hover{
+    background-color: #218838 !important;
+}
+.stat-container {
+  background-color: #fdf5eb;
+  /* Light background */
+  padding: 80px 0;
+}
+
+.custom-card {
+  aspect-ratio: 1 / 1;
+  /* Box ko exact square banane ke liye */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Colors for numbers */
+.count-orange {
+  color: #c44d16;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.count-pink {
+  color: #d63384;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.stat-title {
+  font-weight: 700;
+  color: #060708;
+  margin-top: 10px;
+}
+
+.stat-text {
+  color: #68737d;
+  font-size: 0.9rem;
+  padding: 0 15px;
+}
+
+
+/* 1. Main Section Styling */
+.customers {
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Agar Poppins font hai toh best dikhega */
+}
+
+.customers h1 {
+    font-weight: 800;
+    color: #000;
+}
+
+/* 2. Card Styling (Screenshot jaisa Cream Background) */
+.card1 {
+    background-color: #fff8f2 !important; /* Exact color from your image */
+    border-radius: 15px !important;
+    /* padding: 30px !important; */
+    /* width: 50px; */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for a premium feel */
+.card1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 3. Star Icons Styling */
+.fa-star {
+    color: #ffc107 ; 
+    font-size: 16px;
+}
+
+/* 4. Text Styling inside Card */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #000;
+}
+
+.card1 p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* 5. User Profile (Avatar & Name) */
+.aj {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background-color: #c44d16; /* Screenshot wala orange icon */
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.bj{
+  width: 45px;
+  height: 45px;
+  min-height: 45px;
+  background-color: palevioletred;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Doosre card ke avatar ke liye alag color (Optional) */
+ .row .col-4:nth-child(2) .aj {
+    background-color: #c9296e; /* Pinkish color from image */
+}
+
+.user-info h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.user-info p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+/* 6. Mobile Responsiveness Fix */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-4 {
+        width: 100% !important;
+        max-width: 22rem;
+    }
+}
+.marg {
+    background: linear-gradient( var(--color-primary));
+}
+.marg .btn-light:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn-light.text-danger {
+    padding: 12px 30px;
+    font-weight: 600;
+}
+/* Carousel ko pura screen cover karne ke liye */
+.carousel-item img {
+    height: 100vh;
+    /* object-fit: cover; */
+}
+
+/* Form ko image ke upar lane ke liye */
+.container.d-flex.justify-content-end {
+    position: absolute;
+    top:5%; 
+    right: 5%;
+    z-index: 10;
+    width: 100%;
+}
+
+/* Navbar ka background agar transparent rakhna hai */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Halka black transparent background */
+}
+.code h1, .code h2 {
+    color: #c44d16;
+}
+ .btn.text-white {
+     /* background-color: #ff4d4d; */
+    background: linear-gradient(#c44d16); 
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 8px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.3); 
 }

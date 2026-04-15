@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cravings</title>
+    <link rel="stylesheet" href="Style.Css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="mark">
+        <nav class="navbar navbar-expand-lg  px-5 fixed-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="Home.html"><img src="images/1.png" height="60" /></a>
+        </div>
+
+        <div class="d-flex gap-3">
+            <a href="login.html" class="btn link-light">Login</a>
+            <a href="register.html" class="btn bg-white rounded-2">Register</a>
+        </div>
+    </nav>
+    </header>
+    
+
+    <main>
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner" style="height: 80vh;">
+                    <div class="carousel-item active" data-bs-interval="3000"> <img src="images/Craving1.jpg"
+                            class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/Craving2.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/Cravings3.jpg" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/Cravings4.jpg" class="d-block w-100">
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="hero text-center text-light">
+            <h1>Your Favorite Food, <br>Delivered Fast</h1>
+            <p>Order from thousands of restaurants</p>
+
+            <a href="register.html"><button class="btn  text-white me-3">Sign Up</button></a>
+            <a href="order-now.html"><button class="btn btn-light text-dark">Order Now</button></a>
+
+            <div class="search-box mt-4 mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text bg-white  border-end-0">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0 text-light p-2"
+                        placeholder="search restaurants or dishes...">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+       <!-- /* RESTRONT CARD */ -->
+
+        <div class="pt-5 features-restorant">
+            <div class="container p-4">
+
+                <div class="row">
+
+                    <div class="col-12 mb-4">
+                        <h2 class="fw-bold">Featured Restaurants</h2>
+                        <p class="text-light">3 restaurants available</p>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/mangotree.avif" class="restaurentCardImage card-img-top" alt="Mango Tree">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 3.6
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Under The Mango Tree</h5>
+                                <p class="card-text text-secondary small">Enjoy the thrill of grill and barbecue at
+                                    Under
+                                    The Mango Tree restaurant at Jehan Numa Palace, Bhopal. Head here now</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                        <span class="badge bg-light text-dark border">Italian</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/Rajdarbar.jpg" class="restaurentCardImage card-img-top" alt="Raj Darbar">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 4.8
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Raj Darbar</h5>
+                                <p class="card-text text-secondary small">Raj Darbar is a one-of-a-kind Indian
+                                    restaurant
+                                    that offers a unique dining experience for families and friends with a dhaba-style
+                                    theme.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                        <span class="badge bg-light text-dark border">Italian</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/ground.webp" class="restaurentCardImage card-img-top" alt="Countryside Culture">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 4.1
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Countryside Culture</h5>
+                                <p class="card-text text-secondary small">A hidden gem away from the city, offering lush
+                                    green meadows and peaceful walking paths for relaxation.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/ground.webp" class=" restaurentCardImage card-img-top" alt="Countryside Culture">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 4.1
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">1</h5>
+                                <p class="card-text text-secondary small">A hidden gem away from the city, offering lush
+                                    green meadows and peaceful walking paths for relaxation.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/ground.webp" class="restaurentCardImage card-img-top" alt="Countryside Culture">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 4.1
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">2</h5>
+                                <p class="card-text text-secondary small">A hidden gem away from the city, offering lush
+                                    green meadows and peaceful walking paths for relaxation.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm border-0 h-100">
+                            <div class="position-relative">
+                                <img src="images/ground.webp" class="restaurentCardImage card-img-top" alt="Countryside Culture">
+                                <span class="position-absolute top-0 end-0 m-2 badge bg-danger rounded-pill px-3 py-2">
+                                    <i class="bi bi-star-fill"></i> 4.1
+                                </span>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">3</h5>
+                                <p class="card-text text-secondary small">A hidden gem away from the city, offering lush
+                                    green meadows and peaceful walking paths for relaxation.</p>
+                                <div class="mt-auto">
+                                    <div class="mb-3">
+                                        <span class="badge bg-light text-dark border">Indian</span>
+                                        <span class="badge bg-light text-dark border">Chinese</span>
+                                    </div>
+                                    <button class="btn btn-danger w-100 py-2">Explore Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Card 2 -->
+
+        
+
+
+        <section class="stat-container">
+            <div class="container">
+
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h4 class="display-5 fw-bold text-dark">Cravings by the Numbers</h4>
+                        <p class="text-muted">See why millions trust us for their daily food delivery needs</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-6 col-md-3">
+                        <div class="card custom-card">
+                            <div class="count-orange">2.5M+</div>
+                            <div class="stat-title">Successful Deliveries</div>
+                            <p class="stat-text text-center">Orders delivered with care and precision</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card custom-card">
+                            <div class="count-pink">500K+</div>
+                            <div class="stat-title text-center">Happy Customers</div>
+                            <p class="stat-text text-center">Satisfied users enjoying delicious food</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card custom-card">
+                            <div class="count-orange">5K+</div>
+                            <div class="stat-title">Partner Restaurants</div>
+                            <p class="stat-text text-center">Restaurants serving amazing cuisine</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card custom-card">
+                            <div class="count-pink">1K+</div>
+                            <div class="stat-title text-center">Active Delivery Partners</div>
+                            <p class="stat-text text-center">Riders ensuring quick and safe delivery</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="customers">
+            <div class="container">
+                <div class="container-fluid py-5">
+                    <div class="text-center">
+                        <h1>What our Customers Say</h1>
+                        <p>Real feedback form real food Lover</p>
+                    </div>
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card card1 border-0 shadow-sm p-4 h-100">
+                                <div class="mb-3">
+                                   <i class="fa fa-star"></i> 
+                                   <i class="fa fa-star"></i> 
+                                   <i class="fa fa-star"></i> 
+                                   <i class="fa fa-star"></i> 
+                                   <i class="fa fa-star"></i> 
+                                </div>
+                                <h4 class="fw-bold">Amazing Service</h4>
+                                <p class="text-secondary">"The food arrived hot and fresh. The delivery was incredibly fast. Highly impressed with Cravings' service!"</p>
+                                <div class="d-flex gap-3 align-items-center mt-auto">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold aj">
+                                        AJ
+                                    </div>
+                                    <div class="user-info">
+                                        <h3>Arjun J.</h3>
+                                        <p>Verified Buyer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card card1 border-0 shadow-sm p-4 h-100">
+                                <div class="mb-3">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4 class="fw-bold">Best App Ever!</h4>
+                                <p class="text-secondary">
+                                    "Easy to use interface, wide variety of restaurants, and quick delivery. I order from Cravings every week!"
+                                </p>
+
+                                <div class="d-flex gap-3 align-items-center mt-auto">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold bj">
+                                        SP
+                                    </div>
+                                    <div class="user-info">
+                                        <h3>Sneha P.</h3>
+                                        <p>Verified Buyer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <div class="card card1 border-0 shadow-sm p-4 h-100">
+                                <div class="mb-3">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h4 class="fw-bold">Excellent Choices</h4>
+                                <p class="text-secondary">
+                                    "Love the variety of restaurants available. Found my new favorite spot through Cravings. Definitely worth it!"
+                                </p>
+                                <div class="d-flex gap-3 align-items-center mt-auto">
+                                    <div class="rounded-circle d-flex justify-content-center align-items-center text-white fw-bold aj">
+                                        RJ
+                                    </div>
+                                    <div class="user-info">
+                                        <h3>Raj Kumar</h3>
+                                        <p>Verified Buyer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="marg p-5">
+            <div class="container">
+                <div class=" text-center text-white">
+                    <h1>Become a Restaurant Partner</h1>
+                    <p class="mb-5">Grow your business with Cravings. Join thousands of restaurants already delivering with us.</p>
+                    <div>
+                            <button class="btn btn-light text-danger">Patnar With US</button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+</main>
+
+
+<footer class="bg-dark text-white pt-5">
+
+  <div class="container-fluid px-2">
+
+    <!-- Top Text -->
+    <p class="text-center mb-5">
+      --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+    </p>
+
+    <div class="row align-items-start  text-md-start g-5">
+
+      <!-- Logo -->
+      <div class="col-md-3 text-center mb-4 ">
+        <img src="images/3.png" class="rounded-circle" width="120">
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled mt-3">
+          <li>Home</li>
+          <li>About</li>
+          <li><a href="./order-now.html" class="text-white text-decoration-none">Order Now</a></li>
+        </ul>
+      </div>
+
+      <!-- For Restaurants -->
+      <div class="col-md-2 mb-4">
+        <h5>For Restaurants</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Partner With Us.html" class="text-white text-decoration-none">Partner With Us</a></li>
+          <li><a href="" class="text-white text-decoration-none">Restaurant Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- For Riders -->
+      <div class="col-md-2 mb-4">
+        <h5>For Riders</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="register.html" class="text-white text-decoration-none">Become a Rider</a></li>
+          <li>Rider Dashboard</li>
+        </ul>
+      </div>
+
+      <!-- Feedback -->
+      <div class="col-md-3 mb-4">
+        <h5>Feedback & Support</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Submit Feedback.html" class="text-white text-decoration-none">Submit Feedback</a></li>
+          <li>Help Center</li>
+          <li><a href="Contact Us.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container-fluid px-5">
+
+  <!-- HR -->
+  <hr class="border-light opacity-50">
+
+  <!-- Bottom Footer -->
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+    <!-- Left -->
+    <p class="mb-0">
+      © 2026 Cravings. All rights reserved.
+    </p>
+
+    <!-- Right -->
+    <div class="text-end">
+      <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+      <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+      <a href="#" class="text-white text-decoration-none">Site Map</a>
+    </div>
+    
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
