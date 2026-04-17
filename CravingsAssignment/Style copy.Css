@@ -1,0 +1,806 @@
+/* ===== ROOT COLORS ===== */
+:root {
+    --color-primary: #c2410c;
+    --color-base-100: #fff8f1;
+    --color-neutral: #3f3f46;
+    --color-base-300: #e7d9c9;
+}
+
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-base-100);
+    overflow-x: hidden;
+}
+
+
+/* ===== NAVBAR FIX ===== */
+/* .navbar-custom .container-fluid {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+} */
+/* #login:focus{
+    cursor: pointer;
+} */
+#Login:hover {
+    border: 1px solid white;
+}
+
+#Register:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+/* ===== SMALL SCREEN (MOBILE) ===== */
+@media (max-width: 300px) {
+
+    /* logo collapse smooth */
+    #logoimg {
+        transform: scaleX(0);
+        opacity: 0;
+        position: absolute;
+    }
+
+    /* buttons full width */
+    .navbar-custom .btn {
+        font-size: 14px;
+        padding: 6px 10px;
+
+    }
+
+    /* hero text resize */
+    h1.display-5 {
+        font-size: 28px;
+    }
+
+    .hero-search {
+        max-width: 100%;
+    }
+}
+
+/* ===== MEDIUM SCREEN FIX (IMPORTANT 🔥) ===== */
+@media (max-width: 768px) {
+
+    /* remove overflow spacing */
+    .container,
+    .container-fluid {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    /* cards spacing fix */
+    .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* stat cards full width */
+    .stat-card {
+        max-width: 100%;
+    }
+}
+
+/* ===== CARD RESPONSIVE ===== */
+.restaurant-card img {
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .restaurant-card img {
+        height: 170px;
+    }
+}
+
+/* ===== TEXT FIX ===== */
+p {
+    word-wrap: break-word;
+}
+
+/* ===== CONTAINER ===== */
+.custom-container {
+    margin: 0 auto;
+}
+
+/* ===== NAVBAR ===== */
+.navbar-custom {
+    min-height: 64px;
+    background-color: var(--color-primary);
+}
+
+
+#logoimg {
+    /*  height: 56px;
+    width: 87px; */
+
+    height: 56px;
+    width: 87px;
+
+    /* max-height: 61px;
+    max-width: 92px; */
+
+    transform-origin: center;
+    transition: transform 0.9s ease, opacity 0.9s ease;
+}
+
+/* 🔥 YOUR CUSTOM POINT */
+@media (max-width: 250px) {
+    #logoimg {
+        position: absolute;
+        /* 👈 MAIN FIX */
+        transform: scalex(0);
+        opacity: 0;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #c2410c;
+    /* your theme color */
+}
+
+#Login {
+    color: white;
+}
+
+#Register {
+    background: white;
+    color: var(--color-primary);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    position: relative;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 85vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+
+.hero-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Search */
+.hero-search {
+    max-width: 900px;
+}
+
+#placeholder::placeholder {
+    color: #f6b095;
+}
+
+/* Controls */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    z-index: 3;
+}
+
+/* ===== RESTAURANT SECTION ===== */
+.restaurant-section {
+    background: linear-gradient(var(--color-primary), white);
+}
+
+.section-title {
+    color: white;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ===== CARD ===== */
+.restaurant-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f3e9df;
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+
+
+
+}
+
+.restaurant-body hr {
+    border: none;
+    height: 2px;
+    /* 👈 1px se 2px karo */
+    background-color: #bfae9d;
+    /* 👈 thoda darker for contrast */
+    opacity: 1;
+
+    transform: scaleY(1);
+    /* 👈 fix scaling distortion */
+}
+
+/* 🔥 HOVER (≈ 5px SIZE INCREASE FEEL 😏) */
+.restaurant-card:hover {
+    transform: scale(1.05);
+    /* 👈 ~5px feel */
+
+    box-shadow: 0px 25px 60px rgba(0, 0, 0, 0.18);
+
+    z-index: 10;
+
+
+}
+
+.restaurant-card hr {
+    background: linear-gradient(transparent, #d8c4b2, transparent);
+}
+
+/* ===== IMAGE ===== */
+.restaurant-card img {
+    height: 190px;
+    /* 👈 compact */
+    object-fit: cover;
+}
+
+/* ===== BODY ===== */
+.restaurant-body {
+    background: #f3e9df;
+    padding: 14px;
+    /* 👈 reduced */
+}
+
+/* ===== TITLE ===== */
+.restaurant-body h5 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+/* ===== TEXT ===== */
+.restaurant-body p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+/* ===== TAGS ===== */
+.tag-badge {
+    background: #e2d3c3;
+    color: #333;
+    font-size: 11px;
+    padding: 8px 8px;
+    border-radius: 5px;
+}
+
+/* ===== BADGE ===== */
+.rating-badge {
+    background: var(--color-primary);
+    color: white;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+/* ===== BUTTON ===== */
+
+
+.btn-custom {
+    background-color: #c2410c;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    /* 👈 compact */
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+
+.btn-custom:hover,
+#signup {
+    background: #dc4a10;
+    color: white;
+}
+
+.btn-custom:active {
+    background-color: #a93409 !important;
+    color: white;
+}
+
+.btn-custom:focus {
+    background-color: #c2410c;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+
+.btn-register-login {
+    background-color: #c2410c;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    /* 👈 compact */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-register-login:hover {
+    background-color: rgb(183, 61, 13);
+    color: white;
+}
+
+/* .btn-register-login:active {
+    background-color: rgb(183, 61, 13);
+    color: white;
+} */
+
+#link {
+    text-decoration: none;
+
+}
+
+#link:hover {
+    text-decoration: 1px underline;
+}
+
+#signup:hover {
+    background: #c3410e;
+    color: white;
+}
+
+/* card in numbers */
+/* ===== SECTION BACKGROUND ===== */
+#cravingInNumbers {
+    background: #efe7de;
+}
+
+.stats-section {
+    background: #f1e9e1;
+    /* 👈 light beige/grey */
+}
+
+/* ===== CARD ===== */
+.stat-card {
+    max-width: 260px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+.stat-card:hover,
+#ratingcard1 {
+    transform: translatez(-6px);
+    box-shadow: 0px 18px 40px rgba(0, 0, 0, 0.12);
+    transition: 0.25s ease;
+}
+
+
+/* ===== NUMBER ===== */
+.stat-number {
+    font-size: 36px;
+    /* 👈 slightly reduced */
+    margin-bottom: 8px;
+}
+
+/* ===== COLORS ===== */
+.text-main,
+#partner-btn {
+    color: #c2410c;
+}
+
+.text-pink {
+    color: #d9468f;
+}
+
+/* ===== TITLE ===== */
+.stat-card h5 {
+    font-weight: 600;
+    font-size: 16px;
+    /* 👈 controlled size */
+    margin-bottom: 6px;
+}
+
+/* ===== TEXT ===== */
+.stat-card p {
+    font-size: 13px;
+    /* 👈 tighter */
+    color: #555;
+    margin-bottom: 0;
+}
+
+/* rating cards */
+/* ===== CARD ===== */
+.testimonial-card {
+    background: #FFF8F1;
+    transition: 0.35s ease;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.11);
+}
+
+.testimonial-card:hover {
+    transform: translatez(-6px);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.11);
+}
+
+/* ===== AVATAR ===== */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.avatar1,
+.avatar3 {
+    background-color: #c2410c;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.avatar2 {
+    background-color: #d9468f;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+#memberofus {
+    background-color: #c2410c;
+}
+
+/* footer */
+/* ===== FOOTER BACKGROUND ===== */
+.footer-section {
+    color: white;
+    background-color: #3F3F46;
+    /* 👈 same theme as your site */
+}
+
+/* logo */
+.footer-logo {
+    width: 128px;
+    /* 👈 perfect size */
+    height: auto;
+    object-fit: contain;
+}
+
+/* ===== LINKS ===== */
+.footer-link,
+.footer-bottom-link,
+.footer-copy {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 6px;
+    transition: 0.2s ease;
+}
+
+.footer-link:hover,
+.footer-bottom-link:hover {
+    color: var(--color-primary);
+}
+
+/* ===== COPYRIGHT ===== */
+
+/* ===== DIVIDER ===== */
+.footer-border {
+    height: 0.5px;
+    background-color: #ffffff;
+    /* white line */
+}
+
+/* Above home section is completed */
+
+/* Login Section */
+/* card background like screenshot */
+/* ===== LOGIN CARD ===== */
+.login-card {
+    background: #f3f0ec;
+    border-radius: 14px;
+    max-width: 380px;
+    padding: 18px 16px;
+    /* compact */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+#bgimage {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ===== SECTION HEIGHT CONTROL (85vh use case) ===== */
+.login-section {
+    /* height: 85vh; */
+    display: flex;
+    align-items: center;
+}
+
+/* ===== INPUT STYLE ===== */
+.custom-input {
+    border: 1.5px solid #e2d3c3;
+    border-radius: 8px;
+    padding: 8px 10px;
+    /* compact */
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.custom-section,
+.help-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+h2,
+h3,
+.text-main {
+    color: #c2410c;
+}
+
+/* ===== INPUT FOCUS (PREMIUM FEEL 🔥) ===== */
+.custom-input:focus {
+    border-color: #c2410c;
+    box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.8);
+    outline: none;
+}
+
+/* ===== LABEL COMPACT ===== */
+.form-label {
+    margin-bottom: 3px;
+}
+
+/* ===== BUTTON TIGHT ===== */
+.btn-custom {
+    padding: 6px 0;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* ===== HR LINE ===== */
+.login-card {
+    background: #f3f0ec;
+    border-radius: 14px;
+    max-width: 450px;
+    padding: 24px 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SMALL TEXT CONTROL ===== */
+.small {
+    font-size: 12px !important;
+}
+
+/* ===== EYE ICON POSITION FIX ===== */
+#eyeIcon {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* About Section */
+.bg-corevalues {
+    background-color: #e7d9c3;
+}
+
+.bg-team {
+    background-color: #c2410c;
+    color: white;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.bg-cta {
+    background-color: #c2410c;
+}
+
+#getstartbtn {
+    background-color: white;
+    color: #c2410c;
+}
+
+/* order section */
+/* ===== SEARCH WRAPPER ===== */
+#search {
+    position: sticky;
+    top: 0px;
+    /* navbar height ke equal */
+    z-index: 998;
+    background-color: #FFF8F1;
+}
+
+#searchBar {
+    border: 1px solid #c2410c;
+
+    input::placeholder {
+        background: transparent;
+        color: #E09C7E;
+
+    }
+}
+
+/* ===== INPUT ===== */
+.search-wrapper input {
+    background: transparent;
+}
+
+/* ===== ICON ===== */
+.search-wrapper i {
+    color: #c2410c;
+    font-size: 16px;
+}
+
+/* cards */
+.restaurant-card-main img {
+    height: 150px;
+}
+
+@media (min-width: 768px) {
+    .restaurant-card-main img {
+        height: 170px;
+    }
+}
+
+.restaurant-card-main {
+    overflow: hidden;
+    background: white;
+    /* position: relative; */
+    transition: 0.15s ease;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.11);
+
+    div {
+        img {
+            height: 190px;
+        }
+    }
+}
+
+.restaurant-card-main:hover {
+
+    transform: translatez(-6px);
+    box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.11);
+}
+
+
+.restaurant-body hr {
+    border: none;
+    height: 2px;
+    /* 👈 1px se 2px karo */
+    background-color: #bfae9d;
+    /* 👈 thoda darker for contrast */
+    opacity: 1;
+    transform: scaleY(1);
+    /* 👈 fix scaling distortion */
+}
+
+/* 🔥 HOVER (≈ 5px SIZE INCREASE FEEL 😏) */
+
+/* .restaurant-card-main hr {
+    background: linear-gradient(transparent, #d8c4b2, transparent);
+} */
+
+/* ===== IMAGE ===== */
+.restaurant-card-main img {
+    height: 170px;
+    /* 👈 compact */
+    object-fit: cover;
+}
+
+/* restaurant dashboard */
+/* ===== SECTION HEIGHT ===== */
+.custom-section1 {
+    height: calc(100vh - 64px);
+    overflow: hidden;
+}
+
+/* ===== OVERLAY + BLUR ===== */
+.overlay {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0.45) 25%,
+            rgba(0, 0, 0, 0.05) 50%,
+            /* center almost clear */
+            rgba(0, 0, 0, 0.45) 75%,
+            rgba(0, 0, 0, 0.65) 100%);
+}
+
+.faq-item:hover {
+    background-color: #9EA0A2;
+}
+
+/* privay section */
+.uline {
+    text-decoration: none;
+
+}
+
+.uline:hover {
+    text-decoration: 1px underline;
+
+}
+
+.lookingFor {
+    color: #E0AC98;
+}
+
+.lookingPara {
+    color: #E0AC98;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.privacyBg {
+    background-color: #FFF8F1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+
+}
+
+.cursor-pointer:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.term-toggle {
+    transition: 0.2s;
+}
+
+.term-toggle:hover {
+    background: #f8f9fa;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.term-toggle[aria-expanded="true"] .arrow {
+    transform: rotate(180deg);
+}
+
+/* view menu */
+.menu-card-top {
+    background: #FFF8F1;
+
+}
