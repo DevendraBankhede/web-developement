@@ -1,11 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>terms-of-service</title>
+    <link rel="stylesheet" href="Style.Css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <header class="mark">
+      <nav class="navbar navbar-expand-lg px-5 fixed-top">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a href="Home.html"><img src="images/1.png" height="60" /></a>
+        </div>
+
+        <div class="d-flex gap-3">
+          <a href="login.html" class="btn link-light">Login</a>
+          <a href="register.html" class="btn bg-white rounded-2">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="wallpaper-section">
+      <img
+        src="images/privacy of term.avif"
+        class="wallpaper-img w-100"
+        alt="Privacy Policy"
+      />
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center text-white w-100"
+      >
+        <i class="bi bi-shield-shaded fs-1"></i>
+        <h1 class="fw-bold display-5 text-white">terms of<span class="text-orange"> Service</span>
+        </h1>
+        <p class="px-3 opacity-90 mx-auto" style="max-width: 600px">
+          We value your privacy. Learn how Cravings collects, uses, and protects
+          your personal information.
+        </p>
+        <p class="small opacity-75">Last updated: April 9, 2026</p>
+      </div>
+    </div>
+
+    <div class="container mt-5 text-center" style="max-width: 800px;">
+    <p class="text-muted" style="line-height: 1.8;">
+        These Terms of Service ("Terms") govern your access to and use of the
+        <strong>Cravings</strong> platform, including our website and mobile applications. By
+        creating an account or placing an order, you agree to be bound by these
+        Terms. If you do not agree, please do not use our services.
+    </p>
+</div>
+    <div class="container my-5" style="max-width: 800px">
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle1" class="accordion-input" hidden />
+        <label for="toggle1" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-person-check-fill icon-orange"></i>
+          <span class="ms-3 fw-semibold">1. User Accounts</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Details regarding account creation, security responsibilities, and
+            user profile management for Cravings.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle2" class="accordion-input" hidden />
+        <label for="toggle2" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-cart-fill icon-orange"></i>
+          <span class="ms-3 fw-semibold">2. Orders & Payments</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Information about how orders are processed, payment gateway
+            security, and refund policies.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle3" class="accordion-input" hidden />
+        <label for="toggle3" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-bicycle icon-orange"></i>
+          <span class="ms-3 fw-semibold">3. Rider Terms</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Terms and conditions specifically designed for our delivery partners
+            and logistics management.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle4" class="accordion-input" hidden />
+        <label for="toggle4" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-shop icon-orange"></i>
+          <span class="ms-3 fw-semibold">4. Restaurant Partners</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Guidelines for restaurant listings, menu updates, and partnership
+            commissions.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle5" class="accordion-input" hidden />
+        <label for="toggle5" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-slash-circle icon-orange"></i>
+          <span class="ms-3 fw-semibold">5. Prohibited Conduct</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Rules regarding what users are not allowed to do on the platform to
+            ensure safety for everyone.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle6" class="accordion-input" hidden />
+        <label for="toggle6" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-bank icon-orange"></i>
+          <span class="ms-3 fw-semibold">6. Limitation of Liability</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Legal boundaries concerning the company's responsibility in various
+            service scenarios.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-box shadow-sm mb-3">
+        <input type="checkbox" id="toggle7" class="accordion-input" hidden />
+        <label for="toggle7" class="box-header d-flex align-items-center w-100">
+          <i class="bi bi-x-circle-fill icon-orange"></i>
+          <span class="ms-3 fw-semibold">7. Termination</span>
+          <i class="bi bi-chevron-down ms-auto text-muted arrow-icon"></i>
+        </label>
+        <div class="box-content">
+          <div class="p-4 border-top text-secondary">
+            Conditions under which user accounts or services can be terminated
+            by either party.
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <p class="small text-muted">
+          Your use of Cravings is also governed by our
+          <a href="#" class="privacy-link">Privacy Policy</a>, which is
+          incorporated into these Terms by reference.
+        </p>
+      </div>
+    </div>
+    <div class="marg p-5">
+      <div class="container">
+        <div class="text-center text-white">
+          <i class="bi bi-envelope-fill fs-1 mb-2"></i>
+          <h1>Have questions about our Terms?</h1>
+          <p class="mb-5">
+            Our legal team is happy to help. Send us an email and we'll get back to you within 2 business days.
+          </p>
+          <p>Contect@cravings.com</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="my-custom-footer text-white pt-5">
+
+  <div class="container-fluid px-2">
+
+    <!-- Top Text -->
+    <p class="text-center mb-5">
+      --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+    </p>
+
+    <div class="row align-items-start  text-md-start g-5">
+
+      <!-- Logo -->
+      <div class="col-md-3 text-center mb-4 ">
+        <img src="images/3.png" class="rounded-circle" width="120">
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="./Home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="./about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="./order-now.html" class="text-white text-decoration-none">Order Now</a></li>
+        </ul>
+      </div>
+
+      <!-- For Restaurants -->
+      <div class="col-md-2 mb-4">
+        <h5>For Restaurants</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Partner With Us.html" class="text-white text-decoration-none">Partner With Us</a></li>
+          <li><a href="" class="text-white text-decoration-none">Restaurant Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- For Riders -->
+      <div class="col-md-2 mb-4">
+        <h5>For Riders</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="register.html" class="text-white text-decoration-none">Become a Rider</a></li>
+          <li>Rider Dashboard</li>
+        </ul>
+      </div>
+
+      <!-- Feedback -->
+      <div class="col-md-3 mb-4">
+        <h5>Feedback & Support</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Submit Feedback.html" class="text-white text-decoration-none">Submit Feedback</a></li>
+          <li>Help Center</li>
+          <li><a href="Contact Us.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container-fluid px-5">
+
+  <!-- HR -->
+  <hr class="border-light opacity-50">
+
+  <!-- Bottom Footer -->
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+    <!-- Left -->
+    <p class="mb-0">
+      © 2026 Cravings. All rights reserved.
+    </p>
+
+    <!-- Right -->
+    <div class="text-end">
+      <a href="privacy-policy.html" class="text-white text-decoration-none me-3">Privacy Policy</a>
+      <a href="terms-of-service.html" class="text-white text-decoration-none me-3">Terms of Service</a>
+      <a href="Site map.html" class="text-white text-decoration-none">Site Map</a>
+    </div>
     
-</body>
+  </div>
+
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

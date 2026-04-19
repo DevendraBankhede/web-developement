@@ -803,72 +803,145 @@ header.mark .navbar .container {
 }
 
 /* =======Privacy Policy======== */
-
 .wallpaper-section {
-            height: 320px; /* Choti height jaisa aapne kaha */
-            width: 100%;
-            position: relative;
-            margin-bottom: 0 !important; /* Force zero gap */
-        }
-        
-        .wallpaper-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(0.7); /* Dark overlay taaki text dikhe */
-        }
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .wallpaper-img {
+        /* Height ko yahan se kam karein (e.g., 300px ya 400px) */
+        height: 350px !important; 
+        object-fit: cover; /* Isse image stretch nahi hogi, crop hokar set ho jayegi */
+    }
 
-        /* Accordion Customization to match image */
-        .accordion-item {
-            border: 1px solid #dee2e6 !important;
-            border-radius: 12px !important;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
+    .text-orange {
+        color: #D35400; /* Orange color for 'Policy' */
+    }
+    
+    /* Overlay effect (Optional: text ko zyada saaf dikhane ke liye) */
+    .wallpaper-section::after {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    }
+    
+    .wallpaper-section div {
+        z-index: 1; /* Text overlay ke upar rahega */
+    }
 
-        .accordion-button {
-            padding: 1.25rem;
-            font-weight: 600;
-        }
+   /* Background Color as per your image */
+/* Page ka background */
+body {
+    background-color: #FDF5E6 !important; /* Cream color jaisa photo mein hai */
+}
 
-        .accordion-button:not(.collapsed) {
-            background-color: #fff;
-            color: #000;
-            box-shadow: none;
-        }
-
-        .icon-color {
-            color: #A0522D; /* Same brownish color as image */
-            font-size: 1.2rem;
-        }
-
-        .text-orange { color: #fd7e14; }
-   /* Jab button band ho */
-   /* Puray accordion box ka border aur radius */
-.accordion-item {
-    border: 1px solid #bd2424 !important;
-    border-radius: 10px !important;
+/* Accordion Box Design */
+.accordion-box {
+    background: #ffffff;
+    border: 1px solid #EAECEE;
+    border-radius: 15px;
     overflow: hidden;
 }
 
-/* Jab button band (collapsed) ho - Halka Grey */
-.accordion-button.collapsed {
-    background-color: #f8f9fa !important; 
-    color: #333 !important;
+.box-header {
+    padding: 18px 25px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s;
 }
 
-/* Jab button khul jaye (Active) - Brownish/Orange Look */
-.accordion-button:not(.collapsed) {
-    background-color: #A0522D !important; /* Aapka pasandida color */
-    color: white !important; /* Text safed ho jayega */
+.box-header:hover {
+    background-color: #fcfcfc;
 }
 
-/* Khulne par icons ka color bhi safed ho jaye */
-.accordion-button:not(.collapsed) i {
-    color: white !important;
+/* Content hiding logic */
+.box-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
 }
 
-/* Arrow (teer) ka color khulne par safed karne ke liye */
-.accordion-button:not(.collapsed)::after {
-    filter: brightness(0) invert(1);
+/* Jab checkbox click ho tab content dikhayein */
+.accordion-input:checked ~ .box-content {
+    max-height: 1000px; /* Bada number taaki content fit ho jaye */
+    transition: max-height 0.4s ease-in;
+}
+
+/* Arrow rotation animation */
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion-input:checked ~ .box-header .arrow-icon {
+    transform: rotate(180deg);
+}
+
+/* Colors and Icons */
+.icon-orange {
+    color: #D35400; /* Burnt Orange */
+    font-size: 1.25rem;
+}
+
+.fw-semibold {
+    color: #333;
+}
+.privacy-link {
+    color: #D35400 !important; 
+    text-decoration: none;    
+    font-weight: bold;       
+    transition: color 0.3s ease;
+}
+.accordion-box i {
+    color: #D35400 !important; /* Burnt Orange Color */
+    font-size: 1.4rem;        /* Icons ka size thoda bada karne ke liye */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-orange {
+    color: #D35400 !important;
+}
+.sitemap-title {
+    color: #D35400; /* Burnt Orange */
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Horizontal line below headings */
+.sitemap-hr {
+    border-top: 2px solid #EAECEE;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.sitemap-links li {
+    margin-bottom: 15px;
+}
+
+.sitemap-links a {
+    text-decoration: none;
+    color: #5D6D7E; /* Soft blue-gray color for text */
+    font-weight: 500;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.sitemap-links i {
+    color: #D35400; /* Orange icons */
+    margin-right: 12px;
+    font-size: 1.1rem;
+}
+
+/* Hover effect */
+.sitemap-links a:hover {
+    color: #D35400;
+    transform: translateX(5px);
+}
+
+.text-orange {
+    color: #D35400 !important;
 }
