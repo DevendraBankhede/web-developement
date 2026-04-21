@@ -831,9 +831,9 @@ header.mark .navbar .container {
 
    /* Background Color as per your image */
 /* Page ka background */
-body {
+/* body {
     background-color: #FDF5E6 !important; 
-}
+} */
 
 /* Accordion Box Design */
 .accordion-box {
@@ -944,3 +944,5 @@ body {
 .text-orange {
     color: #D35400 !important;
 }
+
+
