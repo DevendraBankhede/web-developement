@@ -944,5 +944,24 @@ header.mark .navbar .container {
 .text-orange {
     color: #D35400 !important;
 }
-
-
+.overlap-container {
+      margin-top: -700px; 
+      position: relative;
+      z-index: 10;
+ }
+.overlap-container .bg-dark.w-75 {
+    margin-left: 160px !important;
+    margin-right: 0 !important;
+}
+.overlap-container .bg-dark {
+    
+    background-color: rgba(54, 56, 58, 0.5) !important; 
+    border-color: rgba(47, 51, 55, 0.4) !important;  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.my-custom-btn {
+    background-color: #c44d16 !important; 
+    color: white !important;
+    border: none !important;
+}

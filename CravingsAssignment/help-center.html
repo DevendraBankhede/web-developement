@@ -1,22 +1,22 @@
- <!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Style.Css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center</title>
+  <link rel="stylesheet" href="Style.Css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
 </head>
+
 <body>
 
-     <header class="mark">
-        <nav class="navbar navbar-expand-lg  px-5 fixed-top">
+  <header class="mark">
+        <nav class="navbar navbar-expand-lg fixed-top px-5">
         <div class="container d-flex justify-content-between align-items-center">
             <a href="Home.html"><img src="images/1.png" height="60" /></a>
         </div>
@@ -27,88 +27,162 @@
         </div>
     </nav>
     </header>
-    
-    <div id="carouselExample" class="carousel slide">
+
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/HelpPage.jpg" class="d-block w-100" >
+    <div class="carousel-item active position-relative">
+      <img src="images/HelpPage.jpg" class="w-100" style="height: 850px; object-fit: cover;">
+    </div>
+  </div>
+
+  <div class="container overlap-container mb-5">
+    <div class="bg-dark text-white p-3 w-75 rounded-4 shadow-lg border border-secondary ">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6">
+          <i class="bi bi-question-circle-fill"></i> Help Center
+        </h2>
+        <p class="text-white">Browse FAQs or submit a support ticket below.</p>
+      </div>
+
+      <div class="row align-items-stretch">
+
+        <div class="col-md-6">
+          <h6 class="fw-bold mb-4 text-uppercase tracking-wider text-white">Frequently Asked Questions</h6>
+
+          <div class="border rounded p-3 mb-3 d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-handbag-fill me-2 text-light"></i> How do I track my order?</span>
+            <span>+</span>
+          </div>
+
+          <div class="border  rounded p-3 mb-3 d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-credit-card me-2 text-light"></i> How do I get a refund?</span>
+            <span>+</span>
+          </div>
+
+          <div class="border  rounded p-3 mb-3 d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-bicycle me-2 text-light"></i> My rider is late. What do I do?</span>
+            <span>+</span>
+          </div>
+
+          <div class="border  rounded p-3 d-flex justify-content-between align-items-center">
+            <span><i class="bi bi-person-fill me-2 text-light"></i> How do I update my account info?</span>
+            <span>+</span>
+          </div>
+        </div>
+
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+          <div class="vr text-secondary h-100 text-light"></div>
+        </div>
+
+        <div class="col-md-5 mt-4 mt-md-0">
+          <h6 class="fw-bold mb-4 text-uppercase tracking-wider text-white">Submit a Support Ticket</h6>
+
+          <form>
+            <input type="text" class="form-control  text-white  border-secondary mb-3 p-2" placeholder="Enter your full name">
+            <input type="email" class="form-control  text-white border-secondary mb-3 p-2" placeholder="Enter your email">
+
+            <select class="form-select  border-secondary mb-3 p-2">
+              <option class="text-dark">Restaurant / Menu</option>
+              <option class="text-dark">Payment Issue</option>
+              <option class="text-dark">Order Issue</option>
+              <option class="text-dark">Delivery problem</option>
+            </select>
+
+            <input type="text" class="form-control  text-white border-secondary mb-3 p-2" placeholder="e.g. ORD-00123">
+
+            <textarea class="form-control  text-white border-secondary mb-4 p-2" rows="4" placeholder="Please describe the problem in detail..."></textarea>
+
+            <button class="btn my-custom-btn w-100 fw-bold py-2 shadow">Submit Ticket</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+   <footer class="my-custom-footer text-white pt-5 pb-3">
+
+  <div class="container-fluid px-2  ">
+
+    <!-- Top Text -->
+    <p class="text-center mb-5">
+      --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+    </p>
+
+    <div class="row align-items-start  text-md-start g-5">
+
+      <!-- Logo -->
+      <div class="col-md-3 text-center mb-4 ">
+        <img src="images/3.png" class="rounded-circle" width="120">
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="order-now.html" class="text-white text-decoration-none">Order Now</a></li>
+        </ul>
+      </div>
+
+      <!-- For Restaurants -->
+      <div class="col-md-2 mb-4">
+        <h5>For Restaurants</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Partner With Us.html" class="text-white text-decoration-none">Partner With Us</a></li>
+          <li><a href="register.html" class="text-white text-decoration-none">Restaurant Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- For Riders -->
+      <div class="col-md-2 mb-4">
+        <h5>For Riders</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="register.html" class="text-white text-decoration-none">Become a Rider</a></li>
+          <li><a href="register.html" class="text-white text-decoration-none">Rider Dashboard</a></li>
+        </ul>
+      </div>
+
+      <!-- Feedback -->
+      <div class="col-md-3 mb-4">
+        <h5>Feedback & Support</h5>
+        <ul class="list-unstyled mt-3">
+          <li><a href="Submit Feedback.html" class="text-white text-decoration-none">Submit Feedback</a></li>
+          <li><a href="help-center.html" class="text-white text-decoration-none">Help Center</a></li>
+          <li><a href="Contact Us.html" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container-fluid px-5">
+
+  <!-- HR -->
+  <hr class="border-light opacity-50">
+
+  <!-- Bottom Footer -->
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+    <!-- Left -->
+    <p class="mb-0">
+      © 2026 Cravings. All rights reserved.
+    </p>
+
+    <!-- Right -->
+    <div class="text-end">
+      <a href="privacy-policy.html" class="text-white text-decoration-none me-3">Privacy Policy</a>
+      <a href="terms-of-service.html" class="text-white text-decoration-none me-3">Terms of Service</a>
+      <a href="Site map.html" class="text-white text-decoration-none">Site Map</a>
     </div>
     
   </div>
-  
-</div>
-      <div class="helpCenterMain">
-        <div class="container border border-4 w-50 h-25 rounded-3">  
-            <div class="text-center pt-5 mt-5">
-                  <h1 class="fw-bold">Help Center</h1>
-                  <p>Browse FAQs or submit a support ticket below.</p>
-            </div>
 
-            <div class="row">
-               <!-- ====left side FAQ ==== -->
-                <div class="col-md-6">
-                  <h5 class="mb-4">Frequently Asked Questions</h5>
-                </div>
-                <div>
-                  <div>
-                      <input type="text" class="mb-2" placeholder="How do track my order?">
-                  </div>
-                  <div>
-                      <input type="text"  class="mb-2" placeholder="How do i get a refund?">
-                  </div>
-                  <div>
-                      <input type="text" class="mb-2" placeholder="My ride is late. what do I do?">
-                  </div>
-                  <div>
-                        <input type="text" class="mb-2" placeholder="How do i update my account info?">
-                  </div>
-                </div>
-            </div>
-
-            <div class="vr"></div>
-
-            <div class="row">
-                <!-- ====right side FAQ ==== -->
-                 <div class="col-md-6 ">
-                    <h5 class="mb-4">Submit a Support Ticket</h5>
-                    <div>
-                          <div>
-                              <input type="text" class="mb-2" placeholder="Enter your full name">
-                          </div>
-                          <div>
-                              <input type="text" class="mb-2" placeholder="Enter your Email">
-                          </div>
-                          <div>
-                              <select class="mb-2">
-                                <option>Select issue type</option>
-                                <option>Order issue</option>
-                                <option>Payment & billing</option>
-                                <option>Delivery problem</option>
-                                <option>Restornt / Menu</option>
-                                <option>Other</option>
-                              </select>                             
-                          </div>
-                          <div>
-                              <input type="text" class="mb-2" placeholder="e.g.ORD-00123" >
-                          </div>
-                          <div>
-                            <textarea class="mb-2">Palase describe the problem in <details></details></textarea>
-                          </div>
-                          <div class="end">
-                            <button class="rounded-2 form-control">Submit Ticket</button>
-                          </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-        
-      </div>
-
-      
-    <script
+</footer>
+<script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
 </body>
-</html> 
+</html>
