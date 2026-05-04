@@ -24,5 +24,5 @@ console.log(c);
 abc();
 
 function abc() {
-    console.log("I am a function")
+    console.log("I am a function");
 }
