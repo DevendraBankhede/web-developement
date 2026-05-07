@@ -89,4 +89,4 @@ let ab = "This is Web Development Class"
 console.log(ab);
 
 console.log(ab.split(" "));
-console.log(ab.split("_"));
+console.log(ab.split("-"));
