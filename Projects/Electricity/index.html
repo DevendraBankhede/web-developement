@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.min.css" />
+    
+</head>
+<body class="bg-success">
+
+    <div class="card w-25 bg-danger rounded-2 border mx-auto mt-5 p-3 text-white">
+        <h1 class="text-center h3 m-0">BILL CALCULATOR</h1>
+    </div>
+
+    <form class="w-25 bg-light rounded-3 border mx-auto mt-4 p-3">
+        
+        <div class="mb-3">
+            <label for="units" class="form-label fw-bold">Electricity Units</label>
+            <input type="number" min="1" step="1" name="units" id="units" class="form-control" placeholder="Enter units (e.g. 350)" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100" id="submit">Calculate</button>
+
+        <div id="dataCard" class="divHide card mt-3 p-3 bg-white border shadow-sm">
+            <h5 class="text-center text-primary border-bottom pb-2">Bill Breakdown</h5>
+            
+            <p class="mb-1 d-flex justify-content-between"><span>Slab 1 (1-50):</span> <span id="s1">₹0.00</span></p>
+            <p class="mb-1 d-flex justify-content-between"><span>Slab 2 (51-200):</span> <span id="s2">₹0.00</span></p>
+            <p class="mb-1 d-flex justify-content-between"><span>Slab 3 (201-450):</span> <span id="s3">₹0.00</span></p>
+            <p class="mb-1 d-flex justify-content-between"><span>Slab 4 (Above 450):</span> <span id="s4">₹0.00</span></p>
+            <hr class="my-2">
+            <p class="mb-1 d-flex justify-content-between fw-bold"><span>Subtotal:</span> <span id="sub">₹0.00</span></p>
+            <p class="mb-1 d-flex justify-content-between text-danger fw-bold"><span>Surcharge (20%):</span> <span id="sur">₹0.00</span></p>
+            <hr class="my-2">
+            <p class="mb-0 d-flex justify-content-between text-success fw-bold fs-5"><span>Grand Total:</span> <span id="total">₹0.00</span></p>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

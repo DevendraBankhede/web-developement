@@ -1,0 +1,25 @@
+*body{
+    margin: 0;
+    padding: 0;
+}
+input{
+    width: 100px;
+   
+}
+button{
+    
+    width: 100px;
+    grid-template-columns: auto auto auto auto;
+    
+
+}
+.card{
+    height: 40vh!important;
+}
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+}

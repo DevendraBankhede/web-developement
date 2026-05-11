@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip  Calculater</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+<body class="bg-primary">
+    <div class=" card w-25 bg-warning rounded-top-5 border mx-auto mt-5 p-3">
+            <h4 class="text-center text-white">TIP CALCULATER</h4>
+    </div>
+
+    <form class="w-25 bg-light rounded-4 border mx-auto mt-2 p-3">
+        <label for="bill">Bill Amount</label>
+        <input type="text" name="bill" id="bill" class="form-control mb-2" placeholder="Amount to be paid">
+
+        <p>how was the Secvice</p>
+
+         <select id="Amul" class="form-control mb-2" placeholder="Select">
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+        </select>
+
+            <p>total Number of Person</p>
+            
+        <input type="text" name="Person" id="Person" placeholder="Number of people sharing the bill" class="form-control mb-3">
+        <button type="submit" class="btn btn-primary" id="submit">Calculate</button>
+
+
+        <div class="text-center mt-4 divHide" id="dataCard"> 
+            <!-- d-none -->
+            <h5>Tip Amount</h5>
+
+            <h3>
+                <span id="tipinfo">0</span>
+                <i class="bi bi-currency-rupee"></i>
+            </h3>
+
+            <p class="text-muted">each person</p>
+          </div>
+          
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

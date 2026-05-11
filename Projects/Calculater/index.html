@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-center align-items-center mb-2 top-50 position-absolute start-50 translate-middle"
+      id="calculaterBG"
+    >
+      <div class="bg-white rounded p-2" id="calculater">
+        <div
+          class="bg-success-subtle rounded-top-5 p-3 mb-1 border border-dark d-flex justify-content-center align-items-center"
+          id="dispaly"
+        >
+          <label for="text" class="fs-2 text-end" id="text">0</label>
+        </div>
+        <div
+          class="bg-secondary-subtle rounded-bottom-5 mt-1 border border-dark p-3 d-grid"
+          id="numPad"
+        >
+           <div class="d-flex justify-content-evenly mb-2 gap-3">
+            <button
+              class="numPadButtons border d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('AC')"
+            >
+              AC
+            </button>
+            <button
+              class="numPadButtons border  shadow"
+              onclick="Calculate('C')"
+            >
+            C
+            </button>
+            <button
+              class="numPadButtons border d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('%')"
+            >
+              %
+            </button>
+            <button
+              class="numPadButtons border d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('/')"
+            >
+              /
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-evenly mb-2 gap-3">
+            <button
+              class="numPadButtons border justify-content-center align-items-center shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons border justify-content-center align-items-center shadow"
+              onclick="Calculate('8')"
+            >
+              8</button
+            ><button
+              class="numPadButtons border justify-content-center align-items-center shadow"
+              onclick="Calculate('9')"
+            >
+              9
+            </button>
+            <button
+              class="numPadButtons bg-warning border border-warning d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('*')"
+            >
+              *
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-evenly mb-2 gap-3">
+            <button
+              class="numPadButtons border d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('4')"
+            >
+              4
+            </button>
+            <button
+              class="numPadButtons border d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('5')"
+            >
+              5
+            </button>
+            <button
+              class="numPadButtons  d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('6')"
+            >
+              6
+            </button>
+            <button
+              class="numPadButtons bg-warning bg-warning d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('-')"
+            >
+              -
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-evenly mb-2 gap-3">
+            <button
+              class="numPadButtons d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('1')"
+            >
+              1
+            </button>
+            <button
+              class="numPadButtons d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('2')"
+            >
+              2
+            </button>
+            <button
+              class="numPadButtons d-flex justify-content-center align-items-center shadow"
+              onclick="Calculate('3')"
+            >
+              3
+            </button>
+            <button
+              class="numPadButtons d-flex justify-content-center align-items-center shadow bg-warning"
+              onclick="Calculate('+')"
+            >
+              +
+            </button>
+          </div> 
+         
+          <div class="d-flex justify-content-evenly">
+            <button
+              class="numPadButtons border shadow"
+              onclick="Calculate('0')"
+            >
+              0
+            </button>
+            <button
+              class="numPadButtons border shadow"
+              onclick="Calculate('.')"
+            >
+              .
+            </button>
+            <button
+              class="numPadButtons bg-success border border-success w-50 rounded rounded-pill fs-4  shadow"
+              onclick="Calculate('=')"
+            >
+              =
+            </button>
+          </div>
+
+
+
+          <!-- <div class="p-2 numPads d-grid gap-3
+          ">
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('8')"
+            >
+              8
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('9')"
+            >
+              9
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('%')"
+            >
+              %
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-circle shadow"
+              onclick="Calculate('7')"
+            >
+              7
+            </button>
+            <button
+              class="numPadButtons btn rounded-pill shadow seven"
+              onclick="Calculate('7')"
+            >
+              7
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

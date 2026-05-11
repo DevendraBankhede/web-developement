@@ -1,0 +1,47 @@
+#calculatorBG {
+  height: 100vh;
+  background: url("./image/Calculater.jpeg")!important;
+}
+#calculator {
+  width: 400px;
+  height: 600px;
+}
+
+#dispaly {
+  height: 25%;
+}
+
+#numPad {
+  height: 74%;
+  background-color: pink!important;
+}
+
+.numPadButtons {
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 100%;
+}
+
+#equalButton {
+  width: 140px;
+  height: 70px;
+}
+
+button:active {
+  box-shadow: none !important;
+}
+
+
+label{
+    width: 100%;
+}
+
+/* ========== Smart Tarika ========= */
+.numPads{
+    grid-template-columns: auto auto auto auto;
+}
+.seven{
+    grid-column: span 3;
+    width: 250px!important;
+}
