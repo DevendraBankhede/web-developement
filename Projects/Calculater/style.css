@@ -1,6 +1,7 @@
 #calculatorBG {
   height: 100vh;
-  background: url("./image/Calculater.jpeg")!important;
+  background: url(image/Calculater.jpeg) no-repeat center;
+  background-size: cover!important;
 }
 #calculator {
   width: 400px;
@@ -35,7 +36,7 @@ button:active {
 
 label{
     width: 100%;
-}
+} 
 
 /* ========== Smart Tarika ========= */
 .numPads{
