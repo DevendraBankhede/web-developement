@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="pt-5 vh-100 d-flex justify-content-center align-content-center">
+   
+    <img src="image/Cloud.webp" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" alt="">
+
+    <main class="container bg-danger bg-opacity-100 w-25 mt-5 p-5 h-50 rounded text-light position-relative">
+
+      <h3 class="d-flex justify-content-center">WeatherApp</h3>
+      <i class="bi bi-cloud-fill d-flex justify-content-center mb-5"></i>
+      <div class="d-flex justify-content-center gap-4 pt-5">
+    <input type="text" id="cityName" class="form-control" />
+    <button onclick="getWeather()" class="form-control border border-dark">Get Weather</button>
+    </div>
+
+    <br />
+
+    <div class="d-flex justify-content-center">
+      <label>Temp : <span id="Temperature">30</span>ºC</label>
+    </div>  
+    </main>
+   
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
