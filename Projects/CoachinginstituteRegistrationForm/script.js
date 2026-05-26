@@ -87,16 +87,10 @@ function validateData(data) {
   }
   
 
-if (!/^(10|12|diploma|UG|PG)$/.test(data.Qualification)) {
-  document.getElementById("qualificationError").innerText =
-    "Please select a valid qualification";
-  isValid = false;
-}
-
-// if(!/^(iitJee|neet|bankingExams|CA/CS|upsc)$/.test(data.course)) {
-//       document.getElementById("courseError").innerText = 
-//       "Please select a valid Course";
-//       isValid = false;
+// if (!/^(10|12|diploma|UG|PG)$/.test(data.Qualification)) {
+//   document.getElementById("qualificationError").innerText =
+//     "Please select a valid qualification";
+//   isValid = false;
 // }
 
   return isValid;
