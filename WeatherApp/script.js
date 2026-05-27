@@ -1,4 +1,4 @@
-const API_KEY = "d85daee80bce5b60f846636c6df4f876";
+const API_KEY = "Enter your AIP key";
 
 async function getWeather() {
   const cityName = document.getElementById("cityName").value.trim();
