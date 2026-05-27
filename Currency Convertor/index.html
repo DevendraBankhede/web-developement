@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Currency Converter</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+
+<body class="bg-info">
+
+  <!-- Header -->
+  <div class="bg-warning text-center p-3">
+    <h1>Currency Converter</h1>
+  </div>
+
+  <div class="container mt-5">
+
+    <div class="bg-white p-4 rounded shadow">
+
+      <div class="row g-4 align-items-start">
+
+  <div class="col-md-6 d-flex flex-column align-items-center">
+
+    <img
+      id="fromFlag"
+      src="image/india  Flag.jpg"
+      width="120"
+      height="80"
+      class="rounded mb-3"
+    >
+
+    <select class="form-select mb-3" id="fromCountry">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="japan">Japan</option>
+      <option value="uk">UK</option>
+    </select>
+
+  </div>
+
+  <div class="col-md-6 d-flex flex-column align-items-center">
+
+    <img
+      id="toFlag"
+      src="image/United State.jpg"
+      width="120"
+      height="80"
+      class="rounded mb-3"
+    >
+
+    <select class="form-select mb-3" id="toCountry">
+      <option value="usa">USA</option>
+      <option value="india">India</option>
+      <option value="japan">Japan</option>
+      <option value="uk">UK</option>
+    </select>
+
+  </div>
+
+</div>
+
+      <div class="text-center">
+        <input type="text" class="w-25">
+      </div>
+
+      <!-- Button -->
+      <div class="text-center mt-4">
+
+        <button
+          class="btn btn-primary w-25"
+          id="convertBtn"
+        >
+          Convert
+        </button>
+
+      </div>
+
+      <!-- Result -->
+      <h2 class="text-center mt-4 text-success" id="result">
+        Converted Amount: 0
+      </h2>
+
+    </div>
+
+  </div>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
