@@ -1,6 +1,16 @@
 const App = () => {
   return (
     <>
+    <header className="bg-blue-400 p-3.5 flex justify-between items-center font-bold">
+  <span>Cravings</span>
+
+  <div className="flex gap-3 font-bold">
+    <button>Login</button>
+    <button>Register</button>
+  </div>
+</header>
+    <div className="bg-[url('/image.png')] bg-cover h-screen w-full"></div>
+    
       <div className="bg-[url('/commonBG.avif')] bg-cover h-screen w-full flex justify-center items-center">
         <div className="w-2xs mx-auto border p-20 bg-white/70 rounded-2xl flex flex-col justify-center items-center">
           <p className="text-green-700">
