@@ -1,9 +1,11 @@
-function About() {
+import React from "react";
+
+const About = () => {
   return (
-    <div className="text-4xl font-bold text-center mt-10">
-       ℹ️ About Page
-    </div>
+    <>
+      <div>About</div>
+    </>
   );
-}
+};
 
 export default About;
